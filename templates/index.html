@@ -35,6 +35,7 @@
                     </thead>
                     <tbody>
                     {% for todo in allTodo %}
+                    
                     <tr>
                       <th scope="row">{{loop.index}}</th>
                       <td>{{todo.title}}</td>
@@ -46,9 +47,11 @@
                         
                       </td>
                     </tr>
-                </tbody>
-            </table>
+                
+            
                 {% endfor %}
+                </tbody>
+                </table>
                 {% endif %} 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
